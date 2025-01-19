@@ -1,12 +1,13 @@
 import { challengeTypes } from '../../../shared/config/challenge-types';
-import { SuperBlocks } from '../../../shared/config/superblocks';
+import { SuperBlocks } from '../../../shared/config/curriculum';
 
 // Show a grid layout on the superblock level
 
 const gridBasedSuperBlocks = [
   SuperBlocks.RespWebDesignNew,
   SuperBlocks.JsAlgoDataStructNew,
-  SuperBlocks.SciCompPy
+  SuperBlocks.SciCompPy,
+  SuperBlocks.A2English
 ];
 
 export const isGridBased = (
@@ -15,10 +16,9 @@ export const isGridBased = (
 ) => {
   // Python projects should not be displayed as a grid, but should be displayed
   // as a list of projects. Otherwise, if we do not do this the project will be
-  // shown as a single certificaton project, which is not what we want.
+  // shown as a single certification project.
 
-  if (challengeType === 10) return false;
-
+  if (challengeType === challengeTypes.pythonProject) return false;
   return gridBasedSuperBlocks.includes(superBlock);
 };
 
@@ -32,7 +32,9 @@ const projectBasedChallengeTypes = [
   challengeTypes.codeAllyCert,
   challengeTypes.multifileCertProject,
   challengeTypes.exam,
-  challengeTypes.codeAllyPractice
+  challengeTypes.codeAllyPractice,
+  challengeTypes.multifilePythonCertProject,
+  challengeTypes.lab
 ];
 
 export const isProjectBased = (
