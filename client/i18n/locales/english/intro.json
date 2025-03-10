@@ -1335,7 +1335,7 @@
     }
   },
   "foundational-c-sharp-with-microsoft": {
-    "title": "(New) Foundational C# with Microsoft",
+    "title": "Free Foundational C# with Microsoft",
     "intro": [
       "This course offers a comprehensive introduction to C# programming, covering its core concepts, syntax, and practical application in software development.",
       "Through hands-on exercises and projects, you will learn the fundamentals of C#, including variables, data types, control structures, and object-oriented programming principles.",
@@ -3459,7 +3459,8 @@
       "review-web-performance": {
         "title": "Web Performance Review",
         "intro": [
-          "Review the Web Performance concepts to prepare for the upcoming quiz."
+          "Before you take the web performance quiz, you should review everything you've learned so far.",
+          "Open up this page, to review all of the concepts taught including INP, key metrics for measuring performance, Performance Web APIs and more."
         ]
       },
       "quiz-web-performance": {
